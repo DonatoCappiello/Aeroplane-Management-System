@@ -1,0 +1,36 @@
+[{
+    "registration_no": "GCENV",
+    "type": "Q450",
+    "aircraft_hours": 450.10,
+    "hourly_rate": 35.00,
+    "serviceability": true,
+    "imageUrl": "./assets/images/aeroplanes/aeroplane1.jpg"
+}, {
+    "registration_no": "GHAEF",
+    "type": "EV97",
+    "aircraft_hours": 1049.10,
+    "hourly_rate": 35.00,
+    "serviceability": false,
+    "imageUrl": "./assets/images/aeroplanes/aeroplane2.jpg"
+}, {
+    "registration_no": "GHMCA",
+    "type": "EV97",
+    "aircraft_hours": 22.50,
+    "hourly_rate": 35.00,
+    "serviceability": false,
+    "imageUrl": "./assets/images/aeroplanes/aeroplane3.jpg"
+}, {
+    "registration_no": "GHMCD",
+    "type": "C42",
+    "aircraft_hours": 680.50,
+    "hourly_rate": 35.00,
+    "serviceability": true,
+    "imageUrl": "./assets/images/aeroplanes/aeroplane4.jpg"
+}, {
+    "registration_no": "GHMCE",
+    "type": "C42",
+    "aircraft_hours": 524.20,
+    "hourly_rate": 35.00,
+    "serviceability": false,
+    "imageUrl": "./assets/images/aeroplanes/aeroplane5.jpg"
+}]

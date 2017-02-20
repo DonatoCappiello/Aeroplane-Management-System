@@ -1,0 +1,50 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        {{ getPageTitle() }}
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-2">filter by type:</div>
+            <div class="col-md-4">
+                <input type="text" [(ngModel)]='aeroplaneListFilter' />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>filtered by type: {{ aeroplaneListFilter }}</h3>
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table class="table" *ngIf='getAeroplanes() && getAeroplanes().length'>
+                <thead>
+                    <tr>
+                        <th>
+                            <button class="btn btn-primary" (click)='toggleImage()'>
+                                {{imageVisibility() ? 'hide ' : 'show '}}images
+                            </button>
+                        </th>
+                        <th>registration no</th>
+                        <th>type</th>
+                        <th>engine hours</th>
+                        <th>serviceability</th>
+                        <th>hourly rate</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor='let aeroplane of getAeroplanes() | aeroplaneFilter:aeroplaneListFilter'>
+                        <th>
+                            <img *ngIf='imageVisibility()' [src]='aeroplane.imageUrl' [title]='aeroplane.registration_no' [style.width.px]='getImageWidth()' [style.margin.px]='getImageMargins()'>
+                        </th>
+                        <th>{{ aeroplane.registration_no }}</th>
+                        <th>{{ aeroplane.type }}</th>
+                        <th>{{ aeroplane.aircraft_hours }}</th>
+                        <th>
+                            <app-check [serviceability]='aeroplane.serviceability' (aeroplaneAvailability)='onServiceabilityClicked($event)'></app-check>
+                        </th>
+                        <th>{{ aeroplane.hourly_rate | currency:'GBP':true:'1.2-2' }}</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
