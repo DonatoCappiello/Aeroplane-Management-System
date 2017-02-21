@@ -75,26 +75,32 @@ export class AeroplanesFleetComponent implements OnInit {
   }
 
   public getPageTitle(): string {
+    //TODO: data validation
     return this.pageTitle;
   }
 
   public getAeroplanes(): any[] {
+    //TODO: data validation
     return this.aeroplanes;
   }
 
   public getImageWidth(): number {
+    //TODO: data validation
     return this.imageWidth;
   }
 
   public getImageMargins(): number {
+    //TODO: data validation
     return this.imageMargins;
   }
 
   public toggleImage(): void {
+    //TODO: data validation
     this.showImage = !this.showImage;
   }
 
   public imageVisibility(): boolean {
+    //TODO: data validation
     return this.showImage;
   }
 
