@@ -10,7 +10,8 @@ import { IAeroplane } from '../aeroplanes-fleet/aeroplane';
 @Injectable()
 export class AeroplaneService {
 
-  private _aeroplaneUrl = 'http://127.0.0.1:8000/ams/aeroplanes';
+  //private _aeroplaneUrl = 'http://127.0.0.1:8000/ams/aeroplanes';
+  private _aeroplaneUrl = './api/aeroplanes/aeroplanes.json';
 
   constructor(private _http: Http) { }
 
