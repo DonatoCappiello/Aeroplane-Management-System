@@ -13,9 +13,21 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-## Running unit tests
+## Notes
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Interfaces are used to implement strong typing. They enforce the shape of objects and promote consistency:
+
+[aeroplane.ts](https://github.com/DonatoCappiello/Aeroplane-Management-System/blob/master/src/app/aeroplanes-fleet/aeroplane.ts)
+
+
+All components properties are declared private and accessed using getters and setters methods ensuring that no data can be stored without proper validation:
+
+[aeroplanes-fleet.component.ts](https://github.com/DonatoCappiello/Aeroplane-Management-System/blob/master/src/app/aeroplanes-fleet/aeroplanes-fleet.component.ts)
+(in this demo validation has not been implemented)
+
+
+Data is retrieved using a service and an observable, making it available troughout the whole application:
+[aeroplane.service.ts](https://github.com/DonatoCappiello/Aeroplane-Management-System/blob/master/src/app/services/aeroplane.service.ts)
 
 ## Running end-to-end tests
 
