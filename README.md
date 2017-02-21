@@ -29,6 +29,12 @@ All components properties are declared private and accessed using getters and se
 Data is retrieved using a service and an observable, making it available troughout the whole application:
 [aeroplane.service.ts](https://github.com/DonatoCappiello/Aeroplane-Management-System/blob/master/src/app/services/aeroplane.service.ts)
 
+[screenshot1.jpg](https://github.com/DonatoCappiello/Aeroplane-Management-System/blob/master/screenshot1.jpg)
+[screenshot2.jpg](https://github.com/DonatoCappiello/Aeroplane-Management-System/blob/master/screenshot2.jpg)
+[screenshot3.jpg](https://github.com/DonatoCappiello/Aeroplane-Management-System/blob/master/screenshot3.jpg)
+[screenshot4.jpg](https://github.com/DonatoCappiello/Aeroplane-Management-System/blob/master/screenshot4.jpg)
+[screenshot5.jpg](https://github.com/DonatoCappiello/Aeroplane-Management-System/blob/master/screenshot5.jpg)
+
 ## Running end-to-end tests
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
